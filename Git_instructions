@@ -1,0 +1,26 @@
+This is a list of notes from the GINA bootcamp in June 2017 at UAF
+There was a workshop on Github that I missed the first part of, but want to try to catch up for the later part.
+
+Git repo - has a master branch - make changes in the master.
+a Fork is a separate repository - they make changes
+then there may be a pull request to the master to bring in changes from the fork
+
+Branching is like this, but there is a new chain of commits in the branch within the same repository 
+branching is uesful for an experimental feature that may not work. There can be branches being worked on by different people
+and is going to be put back together.  Branches can be shared or are for sharing changes on master.  Forks are to make a totally 
+separate copy of a code for use to use together. 
+
+git branch will give the name of all branches that are local
+git branch -r gives all names of braches on the remote repository. 
+
+git checkout lets you switch between branches or start a new branch 
+
+EX:
+get branch testing_branch (creates new branch)
+get checkout testing_branch (moves to new branch)
+make a new file
+
+git add  will add this to the repository
+git commit with commit the changes
+
+then git push will bring back to online (remote repo)?
