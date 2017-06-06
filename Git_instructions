@@ -5,6 +5,8 @@ Git repo - has a master branch - make changes in the master.
 a Fork is a separate repository - they make changes
 then there may be a pull request to the master to bring in changes from the fork
 
+cloning is not the same as forking - cloning is for branching.
+
 Branching is like this, but there is a new chain of commits in the branch within the same repository 
 branching is uesful for an experimental feature that may not work. There can be branches being worked on by different people
 and is going to be put back together.  Branches can be shared or are for sharing changes on master.  Forks are to make a totally 
@@ -23,4 +25,21 @@ make a new file
 git add  will add this to the repository
 git commit with commit the changes
 
-then git push will bring back to online (remote repo)?
+then git push will bring back to online (remote repo) - yes this works
+
+then something happens where it wants to merge and generate pull request. 
+
+Once it's merged on the remote then from the local I can switch to the master branch and pull.
+then I need to delete the branc on the local 
+git branch -d testing_branch
+
+If I want to know about the remote branch from local, get fetch origin
+
+to combine different branchs - use the merge command
+
+(from in branch if I want to update with master)
+git merge master 
+
+from in master 
+git merge newbranch 
+will put the stuff together
